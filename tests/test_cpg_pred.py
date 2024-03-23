@@ -8,6 +8,35 @@ from bs4 import BeautifulSoup
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from app.cpg_pred import app
 
+def download_file(url, file_path):
+    # Check if the file already exists
+    if os.path.exists(file_path):
+        print(f"File '{file_path}' already exists.")
+        return
+
+    # Make a GET request to download the file
+    try:
+        print(f"Downloading file from '{url}'...")
+        response = requests.get(url)
+        # Check if the request was successful
+        if response.status_code == 200:
+            # Write the file to the specified path
+            with open(file_path, 'wb') as f:
+                f.write(response.content)
+            print(f"File downloaded and saved to '{file_path}'.")
+        else:
+            print(f"Failed to download file from '{url}'. Status code: {response.status_code}")
+    except Exception as e:
+        print(f"An error occurred while downloading the file: {e}")
+
+url = "https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model.pth"
+file_path = "models/model.pth"
+download_file(url, file_path)
+
+url = "https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model_var_len.pth"
+file_path = "models/model_var_len.pth"
+download_file(url, file_path)
+
 class TestApp(unittest.TestCase):
 
     def setUp(self):
