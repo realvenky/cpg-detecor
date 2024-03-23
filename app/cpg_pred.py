@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 import torch
-from cpg_def import CpGPredictor
+from app.cpg_def import CpGPredictor
 import os
 
 # Alphabet helpers
