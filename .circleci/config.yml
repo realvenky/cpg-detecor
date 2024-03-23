@@ -12,7 +12,7 @@ jobs:
       - run:
           name: Install Poetry
           command: |
-            curl -sSL https://raw.githubusercontent.com/realvenky/cpg-detecor/main/get-poetry.py | python
+            curl -sSL https://install.python-poetry.org | python3 -
             export PATH="$HOME/.poetry/bin:$PATH"
 
       # Install dependencies
