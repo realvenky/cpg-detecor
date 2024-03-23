@@ -25,9 +25,8 @@ jobs:
       - run:
           name: Download models
           command: |
-            curl -o https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model_var_len.pth
-            mv model.pth models/
-            
+            curl -o models/model.pth https://github.com/realvenky/cpg-detecor/releases/download/0.1.0/model.pth
+            curl -o models/model_var_len.pth https://github.com/realvenky/cpg-detecor/releases/download/0.1.0/model_var_len.pth
       # Run tests
       - run:
           name: Run tests
