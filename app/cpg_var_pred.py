@@ -2,7 +2,7 @@ from flask import Flask, render_template, request
 import torch
 import os
 
-from cpg_var_def import CpGPredictor
+from app.cpg_var_def import CpGPredictor
 
 # Alphabet helpers
 alphabet = 'NACGT'
