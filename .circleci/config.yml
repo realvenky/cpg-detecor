@@ -25,7 +25,8 @@ jobs:
       - run:
           name: Run tests
           command: |
-            poetry run python -m unittest discover .
+            poetry run python -m unittest tests.test_cpg_pred
+            poetry run python -m unittest tests.test_cpg_var_pred
 
 workflows:
   version: 2
