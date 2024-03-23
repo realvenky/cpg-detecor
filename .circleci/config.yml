@@ -21,6 +21,13 @@ jobs:
           command: |
             poetry install
 
+      # Download trained .pth models
+      - run:
+          name: Download models
+          command: |
+            curl -L https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model.pth > models/model.pth
+            curl -L https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model_var_len.pth > models/model_var_len.pth
+            
       # Run tests
       - run:
           name: Run tests
