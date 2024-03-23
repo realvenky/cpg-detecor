@@ -21,6 +21,12 @@ jobs:
           command: |
             poetry install
             
+      # Download models
+      - run:
+          name: Download model
+          command: |
+            poetry run python -m utils.download
+            
       # Run tests
       - run:
           name: Run tests
