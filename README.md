@@ -25,8 +25,8 @@ poetry run python -m utils.download
 <p>
   
 **Note:**
-1. Fixed Lenth CpG model - `model.pth`
-2. Variable Lenth CpG model - `model_var_len.pth`
+1. Fixed Length CpG model - `model.pth`
+2. Variable Length CpG model - `model_var_len.pth`
 
 ## Running Unit Tests
 ```bash
@@ -92,13 +92,13 @@ output_size = 1
 ### Model Training Results
 
 #### Train Loss
-##### 1. Fixed Length Sequence Training Loss graph:
+##### Fixed Length Sequence Training Loss graph:
 
   <p align="center">
   <img alt="Input" src="./results/fixed_seq_loss.png" width="80%">
   </p>
 
-##### 2. Variable Length Sequence Training Loss graph:
+##### Variable Length Sequence Training Loss graph:
 
   <p align="center">
   <img alt="Input" src="./results/var_seq_loss.png" width="80%">
