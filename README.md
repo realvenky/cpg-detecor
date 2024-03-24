@@ -97,9 +97,9 @@ output_size = 1
   <p align="center">
   <img alt="Input" src="./results/fixed_seq_loss.png" width="80%">
   </p>
-
+  
 ##### Variable Length Sequence Training Loss graph:
-
+<p>
   <p align="center">
   <img alt="Input" src="./results/var_seq_loss.png" width="80%">
   </p>
