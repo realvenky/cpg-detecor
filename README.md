@@ -21,9 +21,10 @@ poetry run python -m utils.download
 ```
 
 #### To Download Trained Files Manually:
+<p>
 [Visit here](https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/)
-
 </p>
+
 **Note:**
 1. Fixed Lenth CpG model - `model.pth`
 2. Variable Lenth CpG model - `model_var_len.pth`
