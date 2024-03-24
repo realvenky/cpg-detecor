@@ -21,8 +21,10 @@ poetry run python -m utils.download
 ```
 
 #### To Download Trained Files Manually:
-1. [Fixed Length CpG Detector](https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model.pth)
-2. [Variable Length CpG Detector](https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model_var_len.pth)
+[Visit here](https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/)
+**Note:**
+1. Fixed Lenth CpG model - `model.pth`
+2. Variable Lenth CpG model - `model_var_len.pth`
 
 ## Running Unit Tests
 ```bash
@@ -85,14 +87,9 @@ input_size = 128
 output_size = 1
 ```
 
-### Test Loss
-1. Fixed Length Sequence Training:
- **`Test Loss: 0.19586889073252678`**
-   
-3. Variable Length Sequence Training:
-   **`Test Loss: 0.29573648143559694`**
-
 ### Model Training Results
+
+#### Train Loss
 ##### 1. Fixed Length Sequence Training Loss graph:
 
   <p align="center">
@@ -105,6 +102,13 @@ output_size = 1
   <img alt="Input" src="./results/var_seq_loss.png" width="80%">
   </p>
 
+#### Test Loss
+1. Fixed Length Sequence Training:
+ **`Test Loss: 0.19586889073252678`**
+   
+3. Variable Length Sequence Training:
+   **`Test Loss: 0.29573648143559694`**
+   
 ### Thought Process Behind Algorithmic Choices and Hyper Param Tuning
   [Refer this document](doc/readme.pdf)
 ## License
