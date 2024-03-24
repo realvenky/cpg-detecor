@@ -57,7 +57,38 @@ ngrok http 5000
 ```
 3. Ngrok will provide a public URL (e.g., **https://your-ngrok-id.ngrok.io**) that you can use to access your Flask app from anywhere.
 
-## Model Training Results
+## Model Training
+### Hyper Param Setting
+1. Fixed Length Sequence Training:
+```bash
+LSTM_HIDDEN = 256
+LSTM_LAYER = 2
+batch_size = 64
+learning_rate = 0.001
+epoch_num = 50
+input_size = 128
+output_size = 1
+```
+
+2. Variable Length Sequence Training:
+```bash
+LSTM_HIDDEN = 256
+LSTM_LAYER = 2
+batch_size = 64
+learning_rate = 0.001
+epoch_num = 100
+input_size = 128
+output_size = 1
+```
+
+### Test Loss
+1. Fixed Length Sequence Training:
+ **`Test Loss: 0.19586889073252678`**
+   
+3. Variable Length Sequence Training:
+   **`Test Loss: 0.29573648143559694`**
+
+### Model Training Results
 ##### 1. Fixed Length Sequence Training Loss graph:
 
   <p align="center">
