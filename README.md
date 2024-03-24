@@ -67,7 +67,7 @@ ngrok http 5000
 2. Variable Length Sequence Training Loss graph:
 
   <p align="center">
-  <img alt="Input" src="./results/variable_seq_loss.png" width="80%">
+  <img alt="Input" src="./results/var_seq_loss.png" width="80%">
 </p
   
 ## License
