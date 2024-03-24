@@ -15,10 +15,14 @@ cd cpg-detector
 ```bash
 poetry install
 ```
-## Download trained model files
+## Download Trained Model Files
 ```bash
 poetry run python -m utils.download
 ```
+
+#### To Download Trained Files Manually:
+1. [Fixed Length CpG Detector](https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model.pth)
+2. [Variable Length CpG Detector](https://github.com/realvenky/cpg-detecor/releases/tag/0.1.0/model_var_len.pth)
 
 ## Running Unit Tests
 ```bash
@@ -55,7 +59,7 @@ poetry run python -m app.cpg_var_pred
 ```bash
 ngrok http 5000
 ```
-3. Ngrok will provide a public URL (e.g., **https://your-ngrok-id.ngrok.io**) that you can use to access your Flask app from anywhere.
+3. Ngrok will provide a public URL (e.g., https://your-ngrok-id.ngrok.io) that you can use to access your Flask app from anywhere.
 
 ## Model Training
 ### Hyper Param Setting
@@ -100,6 +104,8 @@ output_size = 1
   <p align="center">
   <img alt="Input" src="./results/var_seq_loss.png" width="80%">
   </p>
-  
+
+### Thought Process Behind Algorithmic Choices and Hyper Param Tuning
+  [Refer this document](doc/readme.pdf)
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
