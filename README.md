@@ -1,2 +1,50 @@
 # cpg-detecor
-The project involves counting the number of CpGs (consecutive CGs) in given DNA (of N, A, C, G, T) sequences, using NN with LSTM layer
+
+CpG Detector is a neural network-based solution built with PyTorch to count the number of CpGs (consecutive CGs) in given DNA sequences. This repository contains the code for training the model and a Flask web application for inference.
+
+## Setup and Usage
+1. Clone this repository to your local machine:
+```bash
+git clone https://github.com/your_username/cpg-detector.git
+```
+2. Navigate to the project directory:
+```bash
+cd cpg-detector
+```
+3. Install the required dependencies using Poetry:
+```bash
+poetry install
+```
+## Download trained model files
+```bash
+poetry run python -m utils.download
+```
+
+## Running Unit Tests
+```bash
+poetry run python -m unittest discover .
+```
+
+## Running Flask App
+
+#### Running fixed length predictions
+```bash
+poetry run python -m app.cpg_pred
+```
+
+<p align="center">
+  <img alt="Input" src="./results/fixed_input.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Output" src="./results/fixed_output.png" width="45%">
+</p>
+
+#### Running variable length predictions
+```bash
+poetry run python -m app.cpg_var_pred
+```
+
+<p align="center">
+  <img alt="Input" src="./results/var_input.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Output" src="./results/var_output.png" width="45%">
+</p>
