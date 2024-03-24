@@ -58,17 +58,17 @@ ngrok http 5000
 3. Ngrok will provide a public URL (e.g., **https://your-ngrok-id.ngrok.io**) that you can use to access your Flask app from anywhere.
 
 ## Model Training Results
-1. Fixed Length Sequence Training Loss graph:
+##### 1. Fixed Length Sequence Training Loss graph:
 
   <p align="center">
   <img alt="Input" src="./results/fixed_seq_loss.png" width="80%">
-</p
+  </p>
 
-2. Variable Length Sequence Training Loss graph:
+##### 2. Variable Length Sequence Training Loss graph:
 
   <p align="center">
   <img alt="Input" src="./results/var_seq_loss.png" width="80%">
-</p
+  </p>
   
 ## License
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
