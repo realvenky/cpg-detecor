@@ -5,7 +5,7 @@ CpG Detector is a neural network-based solution built with PyTorch to count the 
 ## Setup and Usage
 1. Clone this repository to your local machine:
 ```bash
-git clone https://github.com/your_username/cpg-detector.git
+git clone https://github.com/realvenky/cpg-detector.git
 ```
 2. Navigate to the project directory:
 ```bash
