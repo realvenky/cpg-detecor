@@ -32,11 +32,8 @@ poetry run python -m unittest discover .
 poetry run python -m app.cpg_pred
 ```
 
-<p align="center">
-  <img alt="Input" src="./results/fixed_input.png" width="45%">
-&nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Output" src="./results/fixed_output.png" width="45%">
-</p>
+![Input](results/fixed_input.png)
+![Output](results/fixed_output.png)
 
 #### Running variable length predictions
 ```bash
