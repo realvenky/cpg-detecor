@@ -45,3 +45,14 @@ poetry run python -m app.cpg_var_pred
 &nbsp; &nbsp; &nbsp; &nbsp;
   <img alt="Output" src="./results/var_output.png" width="45%">
 </p>
+
+## Using Ngrok for Public IP
+1. Download Ngrok from [here](https://ngrok.com/download) and follow the installation instructions for your platform.
+2. Run Ngrok to expose your local Flask server to the internet:
+```bash
+ngrok http 5000
+```
+3. Ngrok will provide a public URL (e.g., **https://your-ngrok-id.ngrok.io**) that you can use to access your Flask app from anywhere.
+
+## License
+This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
